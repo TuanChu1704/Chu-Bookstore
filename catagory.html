@@ -1,0 +1,295 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Chu Nhu Bao Tuan
+  ID: s3977886
+  Acknowledgement: https://www.youtube.com/watch?v=6XmDdIRmg84 https://www.w3schools.com/html/-->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chu Chu Bookstore</title>
+
+     <!-- Favicon -->
+     <link rel="icon" href="image/logo.JPG" type="image/png" />
+
+    <!--font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--css link-->
+    <link rel="stylesheet" href="style.css ">
+</head>
+<body>
+    
+    <!--Header section -->
+    <header>
+        <a href="http://127.0.0.1:5500/index.html" class="logo"><img src="image/logo.JPG" alt="store logo image" class="logoimg">Chu Chu Bookstore</a>
+        <nav class="navbar"> 
+            <a href="http://127.0.0.1:5500/index.html">Home</a>
+            <a class="active" href="http://127.0.0.1:5500/index.html#Novel">Novel</a>
+            <a href="http://127.0.0.1:5500/index.html#Manga">Manga</a>
+            <a href="#Art Book">Art Book</a>
+            <a href="#Fiction">Fiction</a>
+            <a href="#Japanese Literature">Japanese Literature</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart" ></a>
+            <a href="#" class="fas fa-shopping-cart" ></a>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+       <!--User login form-->
+        <div class="login-form-container">
+            <div id="close-login-btn" class="fas fa-times">
+
+            </div>
+            <form action="">
+                <h3>sign in</h3>
+                <span>username</span>
+                <input type="email" name="" class="box" placeholder="enter email" id="">
+                <span>password</span>
+                <input type="password" name="" class="box" placeholder="enter password" id="">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me">remember me</label>
+                </div>
+                <input type="submit" value="sign in" class="btn">
+                <p>forget password?<a href="#">click here</a></p>
+                <p>do not have account?<a href="#">create one</a></p>
+            </form>
+        </div>
+    </header>
+
+       <!--Home section start-->
+       <section class="home" id="home"></section>
+
+    <!--Light Novel-->
+    <section class="title" id="Lightnovel">
+
+        <h1 class="heading" ><span>light novel</span></h1>
+
+        <div class="title-slider">
+            <div class="wrapper">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="box">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-search"></a>
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="fas fa-eye"></a>
+                                </div>
+                                <div class="image">
+                                    <a href="http://127.0.0.1:5500/detail.html"><img src="image/violet2.JPG" alt="Violet"></a>
+                                </div>
+                                <div class="content">
+                                    <h3>Violet Evergarden</h3>
+                                    <div class="price">190.000vnd</div>
+                                    <a href="#" class="btn">add to cart</a>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="box">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-search"></a>
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="fas fa-eye"></a>
+                                </div>
+                                <div class="image">
+                                    <img src="image/vanitas.JPG" alt="vanitas">
+                                </div>
+                                <div class="content">
+                                    <h3>Vanitas</h3>
+                                    <div class="price">150.000vnd</div>
+                                    <a href="#" class="btn">add to cart</a>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="box">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-search"></a>
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="fas fa-eye"></a>
+                                </div>
+                                <div class="image">
+                                    <img src="image/angleofdeath.JPG" alt="angleofdeath">
+                                </div>
+                                <div class="content">
+                                    <h3>Angle of Death</h3>
+                                    <div class="price">120.000vnd</div>
+                                    <a href="#" class="btn">add to cart</a>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="box">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-search"></a>
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="fas fa-eye"></a>
+                                </div>
+                                <div class="image">
+                                    <img src="image/mahoutsukai yome.JPG" alt="mahoutsukai">
+                                </div>
+                                <div class="content">
+                                    <h3>Mahou Tsukai Yome</h3>
+                                    <div class="price">170.000vnd</div>
+                                    <a href="#" class="btn">add to cart</a>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="box">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-search"></a>
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="fas fa-eye"></a>
+                                </div>
+                                <div class="image">
+                                    <img src="image/slime300.JPG" alt="slime300">
+                                </div>
+                                <div class="content">
+                                    <h3>Killing slime for 300 years</h3>
+                                    <div class="price">120.000vnd</div>
+                                    <a href="#" class="btn">add to cart</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+<!--Romantic novel-->
+    <section class="title" id="romanticnovel">
+
+    <h1 class="heading"><span>romantic novel</span></h1>
+
+    <div class="title-slider">
+        <div class="wrapper">
+            <table>
+                <tr>
+                    
+                    <td>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-search"></a>
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="fas fa-eye"></a>
+                            </div>
+                            <div class="image">
+                                <img src="image/yourname.JPG" alt="yourname">
+                            </div>
+                            <div class="content">
+                                <h3>Kimi no Namae</h3>
+                                <div class="price">100.000vnd</div>
+                                <a href="#" class="btn">add to cart</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-search"></a>
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="fas fa-eye"></a>
+                            </div>
+                            <div class="image">
+                                <img src="image/oregairu.JPG" alt="oregairu">
+                            </div>
+                            <div class="content">
+                                <h3>Oregairu</h3>
+                                <div class="price">90.000vnd</div>
+                                <a href="#" class="btn">add to cart</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-search"></a>
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="fas fa-eye"></a>
+                            </div>
+                            <div class="image">
+                                <img src="image/bloomintoyou.JPG" alt="bloomintoyou">
+                            </div>
+                            <div class="content">
+                                <h3>Yagate Kimi ni Naru</h3>
+                                <div class="price">120.000vnd</div>
+                                <a href="#" class="btn">add to cart</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-search"></a>
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="fas fa-eye"></a>
+                            </div>
+                            <div class="image">
+                                <img src="image/tonatinokaibutsu.JPG" alt="tonatinokaibutsu">
+                            </div>
+                            <div class="content">
+                                <h3>Tonati no Kaibutsu Kun</h3>
+                                <div class="price">80.000vnd</div>
+                                <a href="#" class="btn">add to cart</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-search"></a>
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="fas fa-eye"></a>
+                            </div>
+                            <div class="image">
+                                <img src="image/kaichoumaid.JPG" alt="kaichoumaid">
+                            </div>
+                            <div class="content">
+                                <h3>Kaichou Wa Maid-sama</h3>
+                                <div class="price">80.000vnd</div>
+                                <a href="#" class="btn">add to cart</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </section>
+
+<!--Fotter-->
+    <section class="fotter">
+        <nav class="navbar"> 
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright</a>
+            <a href="http://127.0.0.1:5500/contact.html">Contact Us </a>
+        </nav>
+    </section>
+
+    <!--js link-->
+    <script src="script.js"></script>
+</body>
+</html>

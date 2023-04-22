@@ -1,0 +1,117 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Chu Nhu Bao Tuan
+  ID: s3977886
+  Acknowledgement: https://www.youtube.com/watch?v=6XmDdIRmg84 https://www.w3schools.com/html/-->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chu Chu Bookstore</title>
+
+     <!-- Favicon -->
+     <link rel="icon" href="image/logo.JPG" type="image/png" />
+
+    <!--font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--css link-->
+    <link rel="stylesheet" href="style.css ">
+
+</head>
+<body>
+    
+    <!--Header section -->
+    <header>
+        <a href="http://127.0.0.1:5500/index.html" class="logo"><img src="image/logo.JPG" alt="store logo image" class="logoimg">Chu Chu Bookstore</a>
+        <nav class="navbar"> 
+            <a href="http://127.0.0.1:5500/index.html">Home</a>
+            <a href="http://127.0.0.1:5500/index.html#Novel">Novel</a>
+            <a href="http://127.0.0.1:5500/index.html#Manga">Manga</a>
+            <a href="#Art Book">Art Book</a>
+            <a href="#Fiction">Fiction</a>
+            <a href="#Japanese Literature">Japanese Literature</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart" ></a>
+            <a href="#" class="fas fa-shopping-cart" ></a>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+       <!--User login form-->
+        <div class="login-form-container">
+            <div id="close-login-btn" class="fas fa-times">
+
+            </div>
+            <form action="">
+                <h3>sign in</h3>
+                <span>username</span>
+                <input type="email" name="" class="box" placeholder="enter email" id="">
+                <span>password</span>
+                <input type="password" name="" class="box" placeholder="enter password" id="">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me">remember me</label>
+                </div>
+                <input type="submit" value="sign in" class="btn">
+                <p>forget password?<a href="#">click here</a></p>
+                <p>do not have account?<a href="#">create one</a></p>
+            </form>
+        </div>
+    </header>
+
+       <!--Contact form section start-->
+    <div class="contact-form-container" >
+        <form >
+            <h3>contact us</h3>
+            <span>contact purpose</span>
+            <input type="text" name="contact purpose" class="box" placeholder="I want to sell books or I want to buy books" id="">
+            <span>name</span>
+            <input type="text" name="name" class="box" placeholder="your name" id="">
+            <span>email</span>
+            <input type="email" name="email" class="box" placeholder="enter email" id="">
+            <span>phone number</span>
+            <input type="tel" name="phone num" class="box" placeholder="enter phone number" id="">
+            <div class="checkbox">
+                <h5>contact preference</h5>
+                <input type="checkbox" name="preference" id="By email">
+                <label for="By email">By email</label>
+                <input type="checkbox" name="preference" id="By phone">
+                <label for="By phone">By phone</label>
+            </div>
+            <div class="checkbox">
+                <h5>receive weekly newsletter</h5>
+                <input type="radio" name="choose" id="yes">
+                <label for="yes">yes</label>
+                <input type="radio" name="choose" id="no">
+                <label for="no">no</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <input type="reset" value="reset" class="btn">
+        </form>
+    </div>  
+
+
+
+<!--Fotter-->
+    <section class="fotter">
+        <nav class="navbar"> 
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright</a>
+            <a class="active" href="http://127.0.0.1:5500/contact.html">Contact Us </a>
+        </nav>
+    </section>
+
+    <!--js link-->
+    <script src="script.js"></script>
+</body>
+</html>

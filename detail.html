@@ -1,0 +1,145 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Chu Nhu Bao Tuan
+  ID: s3977886
+  Acknowledgement: https://www.youtube.com/watch?v=6XmDdIRmg84 https://www.w3schools.com/html/-->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chu Chu Bookstore</title>
+
+     <!-- Favicon -->
+     <link rel="icon" href="image/logo.JPG" type="image/png" />
+
+    <!--font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--css link-->
+    <link rel="stylesheet" href="style.css ">
+
+
+
+</head>
+<body>
+
+    <!--Header section -->
+    <header>
+        <a href="http://127.0.0.1:5500/index.html" class="logo"><img src="image/logo.JPG" alt="store logo image" class="logoimg">Chu Chu Bookstore</a>
+        <nav class="navbar"> 
+            <a href="http://127.0.0.1:5500/index.html">Home</a>
+            <a class="active" href="http://127.0.0.1:5500/index.html#Novel">Novel</a>
+            <a href="http://127.0.0.1:5500/index.html#Manga">Manga</a>
+            <a href="#Art Book">Art Book</a>
+            <a href="#Fiction">Fiction</a>
+            <a href="#Japanese Literature">Japanese Literature</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart" ></a>
+            <a href="#" class="fas fa-shopping-cart" ></a>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+       <!--User login form-->
+        <div class="login-form-container">
+            <div id="close-login-btn" class="fas fa-times">
+
+            </div>
+            <form action="">
+                <h3>sign in</h3>
+                <span>username</span>
+                <input type="email" name="" class="box" placeholder="enter email" id="">
+                <span>password</span>
+                <input type="password" name="" class="box" placeholder="enter password" id="">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me">remember me</label>
+                </div>
+                <input type="submit" value="sign in" class="btn">
+                <p>forget password?<a href="#">click here</a></p>
+                <p>do not have account?<a href="#">create one</a></p>
+            </form>
+        </div>
+    </header>
+
+       <!--Breadcrumb-->
+
+    <section class="bread">
+        <ul class="breadcrumb">
+            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/catagory.html">Light novel</a></li>
+            <li><a href="http://127.0.0.1:5500/detail.html">Violet Evergarden</a></li>
+        </ul>
+    </section>
+
+    <!--Book detail-->
+    <section>
+        <div class="video-container container">
+            <video src="image/SOAP | VIOLET EVERGARDEN EDIT - [AMV] | SVP.MP4" autoplay="true"></video>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div class="about-book">
+                        <h2>Violet Evergarden</h2>
+                        <p>The story follows Violet Evergarden's journey of reintegrating back into society after the war<br>
+                         is over as she is no longer a soldier, and her search for her life's purpose in order to understand<br>
+                          the last words her mentor and guardian, Major Gilbert, had said to her: "I love you."</p>
+                    </div>
+                </td>
+               <td>
+                <h1 class="secret"> this is a secret message from the<br>developer. the only thing he want<br>
+                     to say is IT make he old soon </h1>
+               </td>
+                <td>
+                    <div class="content">
+                        <h1>Book Price</h1>
+                        <div class="price">120.000vnd</div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div class="bookscreenshot">
+            <h2>Book images</h2>
+        </div>
+        <div class="bookimage">
+            <table>
+                <tr>
+                    <td>
+                        <img src="image/violet1.JPG" alt="violet1">
+                    </td>
+                    <td>
+                        <img src="image/violet3.jpg" alt="violet3">
+                    </td>
+                    <td>
+                        <img src="image/violet4.JPG" alt="violet4">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+<!--Fotter-->
+    <section class="fotter">
+        <nav class="navbar"> 
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright</a>
+            <a href="http://127.0.0.1:5500/contact.html">Contact Us </a>
+        </nav>
+    </section>
+
+    <!--js link-->
+    <script src="script.js"></script>
+</body>
+</html>
